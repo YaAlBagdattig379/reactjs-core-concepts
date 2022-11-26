@@ -45,5 +45,6 @@
   background-color: skyblue;
 }
 #hello{
-  color: sienna;
+  color: red;
+  font-weight: 700;
 }

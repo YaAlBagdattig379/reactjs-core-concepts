@@ -4,21 +4,20 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Person></Person>
-      <Person></Person>
-      <Person></Person>
-      <h1>hero alam is a great actor in BD: <Person></Person></h1>
-      
+      <Person name ="Hero Alam"song="badam badam"></Person>
+      <Person name ="Andrew Kishore"song="amar Deho Tori"></Person>
+      <Person name ="Asif Akbar"song="O priya priya"></Person>
+      <Person name ="Pori Babu"song="hero alam fans"></Person>
     </div>
   );
 }
-function Person(){
+function Person(props){
+  console.log(props)
  return (
    <div className="person">  
-      <h1>Famous Singer of Hero Alam </h1>
-      <p id='hello'>Hero alam</p>
+      <h2>song : {props.song}</h2>
+      <p id='hello'>singer : {props.name}</p>
    </div>
   );
 }
-
 export default App;
