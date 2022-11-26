@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
+// Array of object 
 const singers = [
   {name : "bappi lahiri",job:'singing',bankBalance: '1200'},
   {name : "manna dey",job:' older singing',bankBalance: '2200'},
@@ -9,17 +10,20 @@ const singers = [
 ]
 
 function App() {
+  // array 
   const nayoks = ['Hero Alam','Andrew kishore','Asif Akbar','Pori Babu']
   return (
     <div className="App">
       {
-        singers.map(singer => <Person name={singer.name} job={singer.job} ></Person>)
+        singers.map(singer => <Person name={singer.name} job={singer.job} ></Person>) 
+                                  //1. access from an array of object with direct component
       }
       {
-        // nayoks.map(nayok => <Person name={nayok}></Person>)
+        // nayoks.map(nayok => <Person name={nayok}></Person>) // 2. access from array 
+                                                              // with direct component
       }
       {/* singer */}
-      {/* <Person name ={nayoks[0]} song="badam badam"></Person>
+      {/* <Person name ={nayoks[0]} song="badam badam"></Person> //3. access from an array
       <Person name ={nayoks[1]} song="amar Deho Tori"></Person>
       <Person name ={nayoks[2]} song="O priya priya"></Person>
       <Person name ={nayoks[3]} song="hero alam fans"></Person> */}
@@ -30,7 +34,6 @@ function App() {
     </div>
   );
 }
-
 
 // 1..to pass data into Component by 'Person'function name with props
 function Person(props){
