@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.person{
+  border: 3px solid royalblue;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  color: green;
+  background-color: skyblue;
+}
+#hello{
+  color: sienna;
+}
